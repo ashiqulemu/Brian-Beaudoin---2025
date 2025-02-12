@@ -499,7 +499,7 @@ h6 { font-size: 16px; }
 	left: 0px;
 	right: 0px;
 	z-index: 1;
-	background-color: rgba(0,0,0,.2);
+	background-color: transparent;
 }
 .grax_tm_hero .content{
 	width: 100%;
@@ -1142,7 +1142,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #f9f9f9;
+	background-color: #dfdfdf;
 	padding: 140px 0px 90px 0px;
 }
 .grax_tm_news .news_list{
@@ -2370,4 +2370,101 @@ body.dark .grax_tm_settings .cursor li .svg,
 	.grax_tm_portfolio ul li{width: 100%;padding-left: 0px;}
 	.grax_tm_news .news_list ul{margin: 0px;}
 	.grax_tm_news .news_list ul li{width: 100%;padding-left: 0px;}
+}
+
+
+
+
+/* custom code  */
+
+
+
+.tickets_container .tickets {
+	display: flex;
+	flex-wrap: wrap;
+	border: 2px solid #ffffff;
+	border-radius: 10px;
+	margin: 10px 0;
+	box-shadow: 0px 1px 12px 0px #80808038;
+	transition: all 0.3s ease-in-out;
+  }
+  .tickets_container .tickets:hover {
+	transform: scale(1.02);
+	background: #feffe4;
+	border-color: #000;
+  }
+  .tickets_container .tickets:nth-child(odd) {
+	background: #f7f7f7;
+  }
+  .tickets_container .tickets:nth-child(odd):hover {
+	background: #feffe4;
+  }
+  @media (max-width: 768px) {
+	.tickets_container .tickets {
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  padding: 10px;
+	}
+  }
+  .tickets_container .tickets .items {
+	flex: 2;
+	padding: 8px;
+	display: flex;
+	align-items: center;
+  }
+  .tickets_container .tickets .items h3{
+	font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .tickets_container .tickets .items:first-child {
+	order: 1;
+	max-width: 210px;
+  }
+  .tickets_container .tickets .items:nth-child(2) {
+	flex: 3;
+	order: 3;
+  }
+  .tickets_container .tickets .items:nth-child(2) h3 {
+	font-size: 21px;
+  }
+  .tickets_container .tickets .items:nth-child(3) {
+	order: 2;
+	max-width: 270px;
+  }
+  .tickets_container .tickets .items:nth-child(3) h3 span {
+	font-size: 21px !important;
+  }
+  .tickets_container .tickets .items:last-child {
+	flex: 1;
+	justify-content: end;
+	order: 4;
+  }
+  
+
+  .btn-theme {
+	border-radius: 6px;
+    background: #ff2800;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+    padding: 3px 7px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.4rem;
+    border: 2px solid #000;
+    text-decoration: none;
+}
+
+.btn-theme:hover {
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+}
+
+.text-muted {
+    color: #777;
 }
