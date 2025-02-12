@@ -481,6 +481,9 @@ h6 { font-size: 16px; }
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
+	background-image: url('../img/home/user.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 .grax_tm_hero .bg .image{
 	position: absolute;
