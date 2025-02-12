@@ -485,6 +485,11 @@ h6 { font-size: 16px; }
 	background-position: center center;
 	background-repeat: no-repeat;
 }
+@media(max-width:768px){
+	.grax_tm_hero .bg{
+		background-position: 74% 76%;
+    }
+}
 .grax_tm_hero .bg .image{
 	position: absolute;
 	top: 0px;
