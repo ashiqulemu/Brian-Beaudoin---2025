@@ -304,7 +304,7 @@ h6 { font-size: 16px; }
 	top: 0px;
 	left: 0px;
 	display: none;
-	z-index: 10;
+	z-index: 100;
 }
 .grax_tm_mobile_menu .topbar_inner{
 	width: 100%;
