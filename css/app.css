@@ -11,7 +11,7 @@
   src: url("../fonts/Montserrat-Bold.ttf");
 }
 .txt-primary {
-  color: #F63F4D;
+  color: #F63F4D !important;
 }
 
 .bg-theme {
