@@ -206,12 +206,18 @@ h6 {
   padding: 8px;
   display: flex;
   align-items: center;
+  @media (max-width:768px) {
+    padding: 0;
+  }
 }
 
 .tickets_container .tickets .items h3 {
   font-size: 20px;
   font-weight: normal;
   text-transform: uppercase;
+  @media (max-width:768px) {
+   margin-bottom: 0;
+  }
 }
 
 .tickets_container .tickets .items:first-child {
@@ -226,6 +232,10 @@ h6 {
 
 .tickets_container .tickets .items:nth-child(2) h3 {
   font-size: 21px;
+  @media (max-width:768px) {
+    text-align: center;
+    font-size: 16px;
+  }
 }
 
 .tickets_container .tickets .items:nth-child(3) {
