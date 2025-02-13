@@ -114,6 +114,7 @@ h6 {
   background-image: url(../images/home/user.jpg);
   background-repeat: no-repeat;
   background-position: 37% 143%;
+  background-size: cover;
 }
 @media (max-width: 768px) {
   .banner {
@@ -148,6 +149,11 @@ h6 {
   margin-bottom: 40px;
   max-width: 400px;
   font-style: italic;
+}
+@media (max-width: 768px) {
+  .banner .banner-title .subtext {
+    color: #000;
+  }
 }
 
 .tickets_container .tickets {
@@ -243,7 +249,7 @@ h6 {
 
 .btn-theme-ticket {
   border-radius: 6px;
-  background: #ff2800;
+  background: #F63F4D;
   text-align: center;
   font-weight: bold;
   border: 0;

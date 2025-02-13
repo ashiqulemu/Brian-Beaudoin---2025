@@ -131,6 +131,7 @@ h6 {
   background-image: url(../images/home/user.jpg);
   background-repeat: no-repeat;
   background-position: 37% 143%;
+  background-size: cover;
   @media (max-width:768px) {
     
 
@@ -163,6 +164,9 @@ h6 {
       margin-bottom: 40px;
       max-width: 400px;
       font-style: italic;
+      @media (max-width:768px) {
+       color: $black;
+      }
     }
   }
 }
@@ -256,7 +260,7 @@ h6 {
 
 .btn-theme-ticket {
   border-radius: 6px;
-  background: #ff2800;
+  background: $primary;
   text-align: center;
   font-weight: bold;
   border: 0;
