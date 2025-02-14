@@ -1,7 +1,7 @@
 // variables
 
 $primary: #548f6f;
-$secondary: #CB0026;
+$secondary: #4fc383 !important;
 $black: #000;
 $theme: #FFB000;
 $txt: #585858;
@@ -21,28 +21,36 @@ $white: #fff;
   font-family: 'montserrat-bold';
   src: url('../fonts/Montserrat-Bold.ttf');
 }
+
 @font-face {
   font-family: 'dear-daddy';
   src: url('../fonts/DEAR\ Daddy.ttf');
 }
+
 @font-face {
   font-family: 'at-the-party';
   src: url('../fonts/Denne\ At\ The\ Tea\ Party.ttf');
 }
 
-.dear-daddy{
-  font-family: 'dear-daddy'!important;
+.dear-daddy {
+  font-family: 'dear-daddy' !important;
 }
-.at-the-party{
-  font-family: 'at-the-party'!important;
+
+.at-the-party {
+  font-family: 'at-the-party' !important;
 }
 
 .txt-primary {
   color: $primary !important;
 }
 
+
 .bg-theme {
   background: $primary;
+}
+
+.bg-secondary {
+  background: $secondary;
 }
 
 .txt-secondary {
@@ -104,8 +112,8 @@ h6 {
   transition: all .3s ease;
 
   &:hover {
-    color: $black;
-    background-color: $white;
+    color: $white;
+    background-color: $secondary;
   }
 }
 
@@ -118,10 +126,11 @@ h6 {
 }
 
 .tour {
-  background: #DFDFDF;
+  background: #4c9b702b;
 }
 
 .site-header {
+  background: $primary;
 
   .nav-custom {
     .nav-link {
@@ -134,23 +143,24 @@ h6 {
       text-transform: uppercase;
       padding: 8px 15px;
       transition: all 0.4s ease-in-out;
-      background: #548f6f;
+      background: $primary;
       margin: 5px;
       border-radius: 6px;
       color: #fff;
 
       &.active {
-        color: #48ef95;
-        background: darken($color: #416a54, $amount: 5%);
+        color: #ffffff !important;
+        background: $secondary;
       }
 
       &:hover {
-        color: #48ef95;
-        background: darken($color: #416a54, $amount: 5%);
+        color: #ffffff !important;
+        background: $secondary;
       }
 
       @media (max-width:768px) {
         width: 100%;
+        margin: 5px 0;
       }
     }
 
@@ -179,8 +189,8 @@ h6 {
 
   @media (max-width:600px) {
     background-image: linear-gradient(175deg, rgba(255, 255, 255, 0.6), rgb(175 175 175 / 41%)), url(../images/home/user.jpg);
-        background-position: 67% 123%;
-        height: 320px;
+    background-position: 67% 123%;
+    height: 320px;
   }
 
   .banner-title {
@@ -336,11 +346,14 @@ h6 {
 
   span {
     &:first-child {
-      color: $black;
+      color: slategray;
       font-family: "Poppins";
-      font-weight: 600;
-      color: #000;
+      font-weight: 600; 
       flex-basis: 100px;
+    }
+
+    &:last-child {
+      color: $primary;
     }
   }
 
@@ -368,9 +381,21 @@ h6 {
   &:focus {
     box-shadow: none;
     border-color: $primary;
+    color: $secondary;
   }
 }
 
- :target {
-  padding-top: 90px !important;
+:target {
+  padding-top: 85px !important;
+}
+
+.form-style{
+  padding: 30px;
+  border: 1px solid $primary;
+  border-radius: 10px;
+  background: #E1EEE7;
+}
+
+#videos{
+  background-image: url('../images/img/patterns/inspiration-geometry.png');
 }

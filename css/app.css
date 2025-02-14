@@ -34,8 +34,12 @@
   background: #548f6f;
 }
 
+.bg-secondary {
+  background: #4fc383 !important;
+}
+
 .txt-secondary {
-  color: #CB0026;
+  color: #4fc383 !important;
 }
 
 body {
@@ -89,8 +93,8 @@ h6 {
   transition: all 0.3s ease;
 }
 .btn-theme:hover {
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: #4fc383 !important;
 }
 
 .py-default {
@@ -103,9 +107,12 @@ h6 {
 }
 
 .tour {
-  background: #DFDFDF;
+  background: rgba(76, 155, 112, 0.168627451);
 }
 
+.site-header {
+  background: #548f6f;
+}
 .site-header .nav-custom .nav-link {
   text-decoration: none;
   color: #000;
@@ -122,16 +129,17 @@ h6 {
   color: #fff;
 }
 .site-header .nav-custom .nav-link.active {
-  color: #48ef95;
-  background: #375a47;
+  color: #ffffff !important;
+  background: #4fc383 !important;
 }
 .site-header .nav-custom .nav-link:hover {
-  color: #48ef95;
-  background: #375a47;
+  color: #ffffff !important;
+  background: #4fc383 !important;
 }
 @media (max-width: 768px) {
   .site-header .nav-custom .nav-link {
     width: 100%;
+    margin: 5px 0;
   }
 }
 @media (max-width: 768px) {
@@ -315,11 +323,13 @@ h6 {
   gap: 10px;
 }
 .info-bar span:first-child {
-  color: #000;
+  color: slategray;
   font-family: "Poppins";
   font-weight: 600;
-  color: #000;
   flex-basis: 100px;
+}
+.info-bar span:last-child {
+  color: #548f6f;
 }
 
 .copy {
@@ -340,8 +350,20 @@ h6 {
 .form-control:focus {
   box-shadow: none;
   border-color: #548f6f;
+  color: #4fc383 !important;
 }
 
 :target {
-  padding-top: 90px !important;
+  padding-top: 85px !important;
+}
+
+.form-style {
+  padding: 30px;
+  border: 1px solid #548f6f;
+  border-radius: 10px;
+  background: #E1EEE7;
+}
+
+#videos {
+  background-image: url("../images/img/patterns/inspiration-geometry.png");
 }/*# sourceMappingURL=app.css.map */
