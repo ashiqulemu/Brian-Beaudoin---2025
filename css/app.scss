@@ -373,7 +373,7 @@ h6 {
     margin: 0 10px;
     color: $white;
     display: flex;
-    align-items: center;
+    align-items: center;    
   }
 }
 
@@ -398,7 +398,4 @@ h6 {
 
 #videos{
   background-image: url('../images/img/patterns/inspiration-geometry.png');
-  iframe{
-    border: 8px solid $primary;
-  }
 }
