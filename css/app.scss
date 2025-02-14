@@ -398,4 +398,7 @@ h6 {
 
 #videos{
   background-image: url('../images/img/patterns/inspiration-geometry.png');
+  iframe{
+    border: 8px solid $primary;
+  }
 }
