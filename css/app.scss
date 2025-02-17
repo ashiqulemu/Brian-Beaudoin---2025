@@ -1,7 +1,7 @@
 // variables
 
 $primary: #548f6f;
-$secondary: #4fc383 !important;
+$secondary: #4fc383;
 $black: #000;
 $theme: #FFB000;
 $txt: #585858;
@@ -322,7 +322,7 @@ h6 {
 
 .btn-theme-ticket {
   border-radius: 6px;
-  background: $primary;
+  background: $secondary;
   text-align: center;
   font-weight: bold;
   border: 0;
